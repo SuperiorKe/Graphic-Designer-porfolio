@@ -1,0 +1,16 @@
+schemaVersion: 2.0.0
+metadata:
+  name: web-project
+components:
+  - name: dev
+    container:
+      image: public.ecr.aws/aws-mde/universal-image:latest
+commands:
+  - id: install-and-build
+    exec:
+      component: dev
+      commandLine: "npm install && npm run build"
+  - id: test
+    exec:
+      component: dev
+      commandLine: "npm test"
