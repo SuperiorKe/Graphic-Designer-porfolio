@@ -3,56 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Design Studio</title>
+    <title>HUTU - Where Art & Craftmanship Meet Technology</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>ART, CRAFT & TECHNOLOGY</h1>
-            <p class="tagline">Where Art & Craftmanship meet Technology.</p>
+            <h1>HUTU</h1>
+            <p class="tagline">Where Art & Craftmanship Meet Technology</p>
         </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#graphics-arts">Graphics Arts</a></li>
+                <li><a href="#interior-crafts">Interior Crafts</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="slideshow-container">
-                <!-- Slideshow images will be added here -->
-                <div class="slide fade">
-                    <img src="images/T-shirt.jpg" alt="Design Work 1">      
-                </div>
-                <div class="slide fade">
-                    <img src="images/Night-Vision.jpg" alt="Design Work 2">      
-                </div>
-                <div class="slide fade">
-                    <img src="images/CCTV-Installation.jpg" alt="Design Work 3">      
-                </div>
-                
-                <!-- Navigation dots -->
-                <div class="dots">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to HUTU</h2>
+                <p>Empathy in design, craft, and technology</p>
+                <a href="#about" class="cta-button">Discover More</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About HUTU</h2>
+                <p>HUTU stands for empathy in English. We chose this name because art and craft relate to the process of molding an idea into a soft or hard product/service. Once these products and services are ready, they become part of the individual behind them and require security - this is where technology comes in.</p>
+            </div>
+        </section>
+
+        <section id="graphics-arts" class="service-section">
+            <div class="container">
+                <h2>Graphics Arts</h2>
+                <div class="service-content">
+                    <div class="service-image">
+                        <img src="images/T-shirt.jpg" alt="Graphics Design">
+                    </div>
+                    <div class="service-description">
+                        <h3>Professional Graphics Design</h3>
+                        <p>Our graphics design services include branding, logo design, marketing materials, digital art, and custom T-shirt designs. We transform your ideas into visual masterpieces that communicate your message effectively.</p>
+                        <ul class="service-features">
+                            <li>Brand Identity Design</li>
+                            <li>Print & Digital Media</li>
+                            <li>Custom Illustrations</li>
+                            <li>Marketing Collateral</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="cta">
-            <h2>Ready to Transform Your Brand?</h2>
-            <p>Let's create something amazing together.</p>
-            <a href="#contact" class="cta-button">Learn More</a>
+        <section id="interior-crafts" class="service-section alt-bg">
+            <div class="container">
+                <h2>Interior Crafts</h2>
+                <div class="service-content">
+                    <div class="service-description">
+                        <h3>Painting & Interior Decoration</h3>
+                        <p>Transform your spaces with our expert interior decoration and painting services. We blend artistry with functionality to create environments that inspire and comfort.</p>
+                        <ul class="service-features">
+                            <li>Custom Wall Painting</li>
+                            <li>Interior Design Consultation</li>
+                            <li>Decorative Elements</li>
+                            <li>Space Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="service-image">
+                        <img src="images/Night-Vision.jpg" alt="Interior Decoration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology" class="service-section">
+            <div class="container">
+                <h2>Technology</h2>
+                <div class="service-content">
+                    <div class="service-image">
+                        <img src="images/CCTV-Installation.jpg" alt="Technology Services">
+                    </div>
+                    <div class="service-description">
+                        <h3>CCTV, Network & Software Solutions</h3>
+                        <p>Secure and enhance your creative assets with our technology solutions. We provide comprehensive security and networking services to protect what matters most.</p>
+                        <ul class="service-features">
+                            <li>CCTV Installation & Monitoring</li>
+                            <li>Network Setup & Maintenance</li>
+                            <li>Software Installation</li>
+                            <li>Security Consulting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>Ready to transform your ideas into reality? Contact us today.</p>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="graphics">Graphics Arts</option>
+                                <option value="interior">Interior Crafts</option>
+                                <option value="technology">Technology</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Superoir Design Studio. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>HUTU</h3>
+                    <p>Empathy in design, craft, and technology</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#graphics-arts">Graphics Arts</a></li>
+                        <li><a href="#interior-crafts">Interior Crafts</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-envelope"></i> info@hutu.com</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 HUTU. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
